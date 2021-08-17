@@ -33,7 +33,7 @@ object Expressions extends App {
   println(aConditionValue)
 
   // loops create side effects
-  //LOOPS
+  //LOOPS -> side effects, return Unit
 
   var i = 0
   while (i<10){
@@ -51,7 +51,18 @@ object Expressions extends App {
   println(aWeirdNumber)
 
   // null is scala is a empty expression -> ()
-  // reagi
+  // side effects: println(), whiles, reassigning
+
+  //CODE BLOCK = also an expression
+
+  val aCodeBlock = {    // return value of last expression
+    val a = 2
+    val b = y+1
+
+    if (b>2) "hello" else "bye"
+  }
+
+  println(aCodeBlock)
 
 
 

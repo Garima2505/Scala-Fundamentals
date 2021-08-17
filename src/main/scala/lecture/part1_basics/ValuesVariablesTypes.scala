@@ -27,7 +27,7 @@ object ValuesVariablesTypes extends App {
   // Int = represent by 4 bits
   val aInt: Int = 23
 
-  // Long = represent by 8 bits -
+  // Long = represent by 8 bits
   val aLong: Long = 2323442342234234L
 
   // Decimal/Float
