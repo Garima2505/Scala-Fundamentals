@@ -41,6 +41,7 @@ object excersise1 extends App {
     repeat(x/2)
   }
 
-  print(checkPrime(2))
+  println(checkPrime(2))
+  println(checkPrime(6))
 
 }
