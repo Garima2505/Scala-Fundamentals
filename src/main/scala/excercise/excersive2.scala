@@ -29,7 +29,7 @@ object excersive2 extends App{
     helper(n/2)
   }
 
-  println(isPrime(5))
+  println(isPrime(2003))
   println(isPrime(6))
 
   // 3.Fibonacci Function Tail Recursion
