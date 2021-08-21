@@ -1,5 +1,7 @@
 package lecture.part1_basics
 
+import scala.annotation.tailrec
+
 object Recursion extends App {
 
   // recursive function
@@ -15,11 +17,12 @@ object Recursion extends App {
 
   // To resolve this issue we need to write our code smartly
 
-  def anotherFactorial(n: Int): Int = {
 
+  def anotherFactorial(n: Int): Int = {
+    @tailrec    // tell the compiler that the given function is a recursive
     def factHelper(x: Int, accumulator: Int): Int = {
       if (x==1) accumulator
-      else factHelper(x-1, x*accumulator)
+      else factHelper(x-1, x*accumulator)     //TAIL RECURSION - use the recursive call as the last expression
     }
 
     factHelper(n, 1)
@@ -28,7 +31,11 @@ object Recursion extends App {
   println(anotherFactorial(4))
 
   /*
-
+  anotherFactorial(10) = factHelper(10,1)
+                       = factHelper(9, 1*10)
+                       = factHelper(8, 1*10*9)
+                       = factHelper(7, 1*10*9*8)
+                       ...
    */
 
 }
