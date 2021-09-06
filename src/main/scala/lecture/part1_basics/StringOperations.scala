@@ -40,7 +40,7 @@ object StringOperations extends App{
   println(myth)
 
   // raw - interpolator
-  println(raw"This is a \n newline") 
+  println(raw"This is a \n newline")
   val escaped = "This is a \n newline"
   println(raw"$escaped")
   println(s"$escaped")
